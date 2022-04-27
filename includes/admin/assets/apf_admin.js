@@ -55,4 +55,18 @@ jQuery(document).ready(function($){
         $('#custom_product_type option:first').prop('selected', true);
 
     });
+
+    // Replace standard submit
+    $('#publish').remove();
+    let custom_submit = document.createElement("input"),
+        attributes = {
+            'type': 'submit',
+            'name': 'save',
+            'id': 'publish',
+            'class': 'button button-primary button-large',
+            'value': 'Custom Update'
+        }
+    $(custom_submit).attr(attributes);
+    $('#publishing-action').append(custom_submit);
+
 });
