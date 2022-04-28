@@ -12,6 +12,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 require_once plugin_dir_path( __FILE__ ) . 'includes/admin/class-add-custom-fields.php';
 require_once plugin_dir_path( __FILE__ ) . 'includes/class-add-product-front.php';
+require_once plugin_dir_path( __FILE__ ) . 'includes/class-product-loop.php';
 
 Add_Custom_Admin_Fields::init();
 Add_Product_Front::init();
+Show_Product_Loop::init();

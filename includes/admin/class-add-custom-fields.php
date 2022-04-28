@@ -102,7 +102,6 @@ class Add_Custom_Admin_Fields {
                 '_thumbnail_id',
                 $media_id
             );
-            return;
         }
 
         if ( isset( $_POST[ 'product_type' ] ) ) {
