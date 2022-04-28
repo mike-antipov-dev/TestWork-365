@@ -72,6 +72,13 @@ class Add_Product_Front {
             
             if( !is_wp_error( $attach_id ) ) {
                 update_post_meta( $pid, '_thumbnail_id', $attach_id );
+                $image_url = wp_get_attachment_url($attach_id);
+                add_post_meta( 
+                    $pid,
+                    'custom_pic',
+                    $image_url
+                );
+                echo('<script>alert("Product was added successfuly")</script>');
             } else {
                 wp_die( $attach_id, $attach_id );
             }
