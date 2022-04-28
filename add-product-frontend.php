@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Add WooCommerce product from the front-end with some custom fields
-Description: Just another plugin.
+Description: Adds an ability to publish a product from the front-end and adds some custom fields in admin area.
 Author: Mike Antipov
 Version: 1.0
 */
